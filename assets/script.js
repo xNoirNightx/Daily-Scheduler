@@ -26,7 +26,7 @@
 
 // header display date info
 $(function () {
-let currentDate = dayjs().format("MMMM D, YYYY");
+let currentDate = dayjs().format("MMMM DD, YYYY");
 $("#currentDay").text(currentDate);
 });
 
