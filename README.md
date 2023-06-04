@@ -38,7 +38,7 @@ I followed the criteria below provided by the class instructors.
 
 The following image shows the welcome screen of my quiz.
 
-![Daily Scheduler ]()
+![Daily Scheduler ](./assets/images/screenshot.png)
 
 > **Note**: This layout image is screen shot from a desktop computers web browser. It displays differently vs on Vscode.
 
@@ -57,7 +57,7 @@ The following image shows the welcome screen of my quiz.
 
 ## My Githubs
 
-- https://xnoirnightx.github.io/Snow-Leopard-Quiz/
+- https://xnoirnightx.github.io/Daily-Scheduler
 
 ## License
 

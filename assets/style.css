@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  background-color: #383636;
+  background-color: #000000;
 }
 
 textarea {
@@ -15,6 +15,9 @@ textarea {
 
 header {
   background-image: url(./images/background.png);
+  box-shadow: 0 0 30px #000000;
+  border: 5px solid #000000;
+  color: #ffffff;
 }
 
 .description {
@@ -32,28 +35,36 @@ header {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-radius: 15%;
+  box-shadow: 0 0 30px #000000;
+  border: 3px solid #ffffff;
 }
 
 .past {
   background-color: #d3d3d3;
   color: white;
+  box-shadow: 0 0 30px #000000;
+  border: 5px solid #ffffff;
 }
 
 .present {
   background-color: #ff6961;
   color: white;
+  box-shadow: 0 0 30px #000000;
+  border: 5px solid #ffffff;
 }
 
 .future {
   background-color: #77dd77;
   color: white;
+  box-shadow: 0 0 30px #000000;
+  border: 5px solid #ffffff;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15%;
+  box-shadow: 0 0 20px #06aed5;
+  border: 2px solid #ffffff;
   background-color: #06aed5;
   color: white;
 }
@@ -66,7 +77,10 @@ header {
 /* footer , add icons ? cat ? */
 footer {
   padding: 2rem 2%;
-  background-color: #000000;
+  background-image: url(./images/background.png);
+  border: #000000;
+  box-shadow: 0 0 30px #000000;
+  border: 5px solid #000000;
 }
 .footertext p {
   justify-content: center;
