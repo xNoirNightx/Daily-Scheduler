@@ -43,17 +43,19 @@ $(".time-block").each(function () {
 
 
 //day and parseInt
+let currentHour = dayjs().format("H")
+let blockHour = parseInt($(this).attr("id").split("-")[1]);
 
 //past
-
-//present
+if (blockHour < currentHour) {
+  $(this).addClass("past").removeClass("present future");
+// present 
+$(this).addClass("present").removeClass("past future");
+} else {
 
 //future
+ $(this).addClass("future").removeClass("past present");
+    }
+  });
 
 
-
-
-
-
-
-});
