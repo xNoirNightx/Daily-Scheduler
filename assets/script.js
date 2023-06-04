@@ -26,24 +26,25 @@
 
 // header display date info
 $(function () {
-var currentDate = dayjs().format("MMMM D, YYYY");
+let currentDate = dayjs().format("MMMM D, YYYY");
 $("#currentDay").text(currentDate);
 });
 
 // save button
-$(".saveBTN").on("click",function (){
-  let timeBlock = $(this).parent().attr("id");
+$(".saveBtn").on("click", function () {
+let timeBlock = $(this).parent().attr("id");
+let eventDescription = $(this).siblings(".description").val();
+  localStorage.setItem(timeBlock, eventDescription);
+});
+$(".time-block").each(function () {
+let timeBlock = $(this).attr("id");
+let eventDescription = localStorage.getItem(timeBlock);
+  $(this).find(".description").val(eventDescription);
 });
 
-$(".time-block").each(function () {
- let timeBlock = $(this).attr("id");
- let eventDescription = localStorage.getItem(timeBlock);
-
-  $(this).find(".description").val(eventDescription);
-
-
 //day and parseInt
-let currentHour = dayjs().format("H")
+let currentHour = dayjs().format("H");
+$(".time-block").each(function () {
 let blockHour = parseInt($(this).attr("id").split("-")[1]);
 
 //past
@@ -52,10 +53,10 @@ if (blockHour < currentHour) {
 // present 
 $(this).addClass("present").removeClass("past future");
 } else {
-
 //future
  $(this).addClass("future").removeClass("past present");
     }
   });
 
 
+  
