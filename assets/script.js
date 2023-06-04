@@ -8,7 +8,7 @@ $("#currentDay").text(currentDate);
 $(".saveBtn").on("click", function () {
   let timeBlock = $(this).parent().attr("id");
   let eventDescription = $(this).siblings(".description").val();
-    localStorage.setItem(timeBlock, eventDescription);
+    localStorage.setItem(hourID, eventDescription);
   });
 
 //day and parseInt
@@ -18,14 +18,15 @@ let blockHour = parseInt($(this).attr("id").split("-")[1]);
 
 //past
 if (blockHour < currentHour) {
-$(this).addClass("past").removeClass("present future");
-// present 
-$(this).addClass("present").removeClass("past future");
-} else {
+  $(this).addClass("past");
+//present
+} else if (blockHour === currentHour) {
+  $(this).addClass("present");
 //future
- $(this).addClass("future").removeClass("past present");
-    }
-  });
+} else {
+  $(this).addClass("future");
+}
+});
 
 // local storage saved
   $(".time-block").each(function () {
