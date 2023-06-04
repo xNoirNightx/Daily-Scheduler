@@ -31,9 +31,9 @@ $("#currentDay").text(currentDate);
 });
 
 // save button
-$(.saveBTN).on("click",function (){
+$(".saveBTN").on("click",function (){
   let timeBlock = $(this).parent().attr("id");
-
+});
 
 $(".time-block").each(function () {
  let timeBlock = $(this).attr("id");
@@ -42,7 +42,13 @@ $(".time-block").each(function () {
   $(this).find(".description").val(eventDescription);
 
 
+//day and parseInt
 
+//past
+
+//present
+
+//future
 
 
 
