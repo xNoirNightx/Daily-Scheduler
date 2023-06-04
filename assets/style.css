@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  background-color: #383636;
 }
 
 textarea {
@@ -10,6 +11,10 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+}
+
+header {
+  background-image: url(./images/background.png);
 }
 
 .description {
@@ -56,4 +61,16 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+/* footer , add icons ? cat ? */
+footer {
+  padding: 2rem 2%;
+  background-color: #000000;
+}
+.footertext p {
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
 }
